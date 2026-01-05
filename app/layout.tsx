@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-hanken antialiased flex justify-center`}
+        className={`font-hanken antialiased flex items-center flex-col`}
       >
         <ReactLenis root>
           <Header/>

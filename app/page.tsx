@@ -1,9 +1,12 @@
 import Wrapper from "@/components/common/wrapper";
+import Hero from "@/components/landing/hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center  ">
+    <div className="min-h-screen py-12  ">
+      <Hero/>
     </div>
+
   );
 }
