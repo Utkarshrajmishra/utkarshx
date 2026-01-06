@@ -5,8 +5,9 @@ import { HeaderConfig } from "@/config/header"
 
 const Header=()=>{
     return(
-        <Wrapper className="sticky top-0 z-20  py-4 backdrop-blur-sm">
-            <div className="flex items-center justify-between px-6">
+        <div className="sticky top-0 z-20  py-4 w-full flex justify-center backdrop-blur-sm">
+            <Wrapper className="max-auto ">
+            <div className="flex items-center justify-between px-5">
                 <div className="flex place-items-baseline gap-4">
                 <Link href="/">
                 <Image 
@@ -31,7 +32,8 @@ const Header=()=>{
                 </div>
 
             </div>
-        </Wrapper>
+            </Wrapper>
+        </div>
     )
 }
 
