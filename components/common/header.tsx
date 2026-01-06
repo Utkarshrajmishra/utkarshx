@@ -5,7 +5,7 @@ import { HeaderConfig } from "@/config/header"
 
 const Header=()=>{
     return(
-        <Wrapper className="sticky top-0 z-20 rounded-md py-4 backdrop-blur-sm">
+        <Wrapper className="sticky top-0 z-20  py-4 backdrop-blur-sm">
             <div className="flex items-center justify-between px-6">
                 <div className="flex place-items-baseline gap-4">
                 <Link href="/">

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen py-12  ">
+    <div className="min-h-screen py-16 ">
       <Hero/>
     </div>
 
