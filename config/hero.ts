@@ -14,6 +14,10 @@ import Github from "@/components/svgs/Github";
 import LinkedIn from "@/components/svgs/LinkedIn";
 import Mail from "@/components/svgs/Mail";
 import X from "@/components/svgs/X";
+import {  Youtube, YoutubeIcon } from "lucide-react";
+import Medium from "@/components/svgs/Medium";
+import Instagram from "@/components/svgs/Instagram";
+import { Peerlist } from "@/components/svgs/Peerlist";
 
 /* ---------------------------------
    Skill component map
@@ -93,11 +97,11 @@ export const HeroConfig = {
    Social links
 ---------------------------------- */
 export const socialLinks = [
-  {
-    name: "X",
-    href: "https://x.com/ramxcodes",
-    icon: X,
-  },
+  // {
+  //   name: "X",
+  //   href: "https://x.com/ramxcodes",
+  //   icon: X,
+  // },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/ramxcodes/",
@@ -107,6 +111,30 @@ export const socialLinks = [
     name: "Github",
     href: "https://github.com/ramxcodes",
     icon: Github,
+  },
+  
+   {
+    name: "Youtube",
+    href: "mailto:ramxcodes@gmail.com",
+    icon: YoutubeIcon,
+  },
+
+  {
+    name: "Instagram",
+    href: "mailto:ramxcodes@gmail.com",
+    icon: Instagram,
+  },
+
+  {
+    name: "Medium",
+    href: "mailto:ramxcodes@gmail.com",
+    icon: Medium,
+  },
+
+  {
+    name: "Peerlist",
+    href: "mailto:ramxcodes@gmail.com",
+    icon: Peerlist,
   },
   {
     name: "Email",
