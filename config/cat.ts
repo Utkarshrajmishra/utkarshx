@@ -6,4 +6,6 @@ export const onkeoGif = [
   './oneko/oneko-ramxcodes.gif',
   './oneko/oneko.gif',
   './oneko/oneko-dog.gif',
+  './oneko/oneko-maia.gif',
+  './oneko/oneko-tora.gif',
 ];

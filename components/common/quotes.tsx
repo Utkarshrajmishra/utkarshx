@@ -20,7 +20,7 @@ export const Quote = () => {
 
   return (
     <Wrapper className="py-16">
-      <div className="dark:border-dark-white-50 relative rounded-xl border px-4 py-10">
+      <div className=" relative bg-[#131313] rounded-md border border-neutral-700 px-4 py-10">
         <svg
           aria-hidden="true"
           width="105"

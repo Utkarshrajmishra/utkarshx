@@ -24,4 +24,16 @@ export const quotes = [
     quote: `I’ll take a potato chip… AND EAT IT!`,
     author: 'Light Yagami, Death Note',
   },
+  {
+    quote: 'Push through the pain, giving up hurts more than pain.',
+    author: 'Vegeta, Dragon Ball Z',
+  },
+  {
+    quote:'Hard work is worthless for those that don’t believe in themselves.',
+    author:'Naruto Uzumaki, Naruto',
+  },
+  {
+    quote:'Power comes in response to a need, not a desire',
+    author:'Goku, Dragon Ball Z',
+  }
 ];
