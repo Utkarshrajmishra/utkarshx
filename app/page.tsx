@@ -5,6 +5,8 @@ import Hero from "@/components/landing/hero";
 import Spotify from "@/components/landing/spotify";
 import Github from "@/components/landing/github";
 import Image from "next/image";
+import MediumBlogs from "@/components/landing/blogs";
+import PersonalLife from "@/components/landing/life";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <ExperienceSection/>
       <About/>
       <Github/>
+      <MediumBlogs/>
+      <PersonalLife/>
     </div>
 
   );

@@ -80,7 +80,7 @@ const Hero = () => {
                 button.variant === 'default' && 'inset-shadow-indigo-500',
               )}
             >
-              {ButtonIcon && <ButtonIcon />}
+              {ButtonIcon && <ButtonIcon/>}
               <Link href={button.href}>{button.text}</Link>
             </Button>
           );
