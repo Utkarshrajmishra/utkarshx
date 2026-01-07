@@ -6,6 +6,7 @@ import { Hanken_Grotesk } from 'next/font/google';
 import { ViewTransitions } from 'next-view-transitions';
 import OnekoCat from '@/components/common/onkeo-cat';
 import { Quote } from '@/components/common/quotes';
+import Footer from '@/components/common/footer';
 
 const hanken = Hanken_Grotesk({
   variable: '--font-hanken',
@@ -33,6 +34,7 @@ export default function RootLayout({
             {children}
             <OnekoCat/>
             <Quote/>
+            <Footer/>
           </ReactLenis>
         </ViewTransitions>
       </body>

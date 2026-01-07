@@ -135,7 +135,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
       </div>
 
       {/* Description */}
-      <div className="text-secondary flex flex-col">
+      <div className="text-neutral-400 flex flex-col">
         {experience.description.map(
           (description: string, descIndex: number) => (
             <p
