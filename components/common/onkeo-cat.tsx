@@ -6,10 +6,12 @@ import Script from 'next/script';
 import { useEffect, useState } from 'react';
 
 export default function OnekoCat() {
-    const [currentGif, setCurrentGif] = useState<null | number>(null);
+    const [currentGif, setCurrentGif] = useState<null | string>(null);
 
     useEffect(()=>{
-        setCurrentGif(Math.floor(Math.random() * onkeoGif.length));
+          const gif = onkeoGif[Math.floor(Math.random() * onkeoGif.length)];
+      
+        setCurrentGif(gif)
     },[])
 
 
@@ -18,6 +20,6 @@ export default function OnekoCat() {
   }
 
   return(
-    currentGif && <Script src="./oneko/oneko.js" data-cat={onkeoGif[currentGif]} />
+    currentGif && <Script src="./oneko/oneko.js" data-cat={currentGif} />
  )
 }
