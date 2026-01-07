@@ -1,7 +1,9 @@
 import Wrapper from "@/components/common/wrapper";
+import About from "@/components/landing/about";
 import ExperienceSection from "@/components/landing/experience-section";
 import Hero from "@/components/landing/hero";
 import Spotify from "@/components/landing/spotify";
+import Github from "@/components/landing/github";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,6 +12,8 @@ export default function Home() {
       <Hero/>
       <Spotify/>
       <ExperienceSection/>
+      <About/>
+      <Github/>
     </div>
 
   );
