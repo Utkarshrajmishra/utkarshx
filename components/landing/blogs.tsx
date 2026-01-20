@@ -79,9 +79,10 @@ export default function MediumBlogs() {
 
 <>      <div className="grid gap-6 md:grid-cols-2 mt-8">
         {posts.slice(0, 4).map((post, index) => (
-          <article
+          <Link
+          href={post.link}
             key={index}
-            className="bg-neutral-900 rounded-md overflow-hidden h-[400px] flex flex-col border border-neutral-800"
+            className="bg-neutral-900  cursor-pointer rounded-md overflow-hidden h-[400px] flex flex-col border border-neutral-800"
           >
             <div className="relative w-full h-1/2">
               <Image
@@ -124,7 +125,7 @@ export default function MediumBlogs() {
                 <Globe className="size-4" />
               </div>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
       <div className="mt-8 flex justify-center">

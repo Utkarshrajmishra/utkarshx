@@ -7,17 +7,23 @@ import Github from "@/components/landing/github";
 import Image from "next/image";
 import MediumBlogs from "@/components/landing/blogs";
 import PersonalLife from "@/components/landing/life";
+import Projects from "@/components/landing/projects";
+import CTA from "@/components/landing/cta";
 
 export default function Home() {
   return (
     <div className="min-h-screen  py-20 px-8 ">
-      <Hero/>
-      <Spotify/>
-      <ExperienceSection/>
-      <About/>
-      <Github/>
-      <MediumBlogs/>
-      <PersonalLife/>
+      <Hero />
+      <Spotify />
+      <ExperienceSection />
+      <Projects />
+      <About />
+      <Github />
+      <MediumBlogs />
+
+      <CTA />
+      <PersonalLife />
+
     </div>
 
   );

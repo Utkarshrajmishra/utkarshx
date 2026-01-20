@@ -2,11 +2,16 @@ import type { Metadata } from 'next';
 import './globals.css';
 import ReactLenis from 'lenis/react';
 import Header from '@/components/common/header';
-import { Hanken_Grotesk } from 'next/font/google';
+import { Hanken_Grotesk, Host_Grotesk } from 'next/font/google';
 import { ViewTransitions } from 'next-view-transitions';
 import OnekoCat from '@/components/common/onkeo-cat';
 import { Quote } from '@/components/common/quotes';
 import Footer from '@/components/common/footer';
+
+const host=Host_Grotesk({
+  variable:"--font-host",
+  subsets: ['latin'],
+})
 
 const hanken = Hanken_Grotesk({
   variable: '--font-hanken',

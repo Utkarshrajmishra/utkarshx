@@ -7,7 +7,6 @@ export const revalidate = 3600;
 export async function GET() {
     try{
         const post=await fetchMediumPosts();
-        console.log(post)
         return NextResponse.json({
             success: true,
             count: post.length,
