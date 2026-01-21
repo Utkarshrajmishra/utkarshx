@@ -9,7 +9,9 @@ import { Quote } from '@/components/common/quotes';
 import Footer from '@/components/common/footer';
 
 
-const hostGrotesk=Host_Grotesk({
+
+
+const hankenGrotesk=Hanken_Grotesk({
   variable:"--font-host-grotesk",
   subsets:["latin"]
 })
@@ -27,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${hostGrotesk.variable} bg-neutral-950 text-white antialiased flex items-center flex-col`}
+        className={` ${hankenGrotesk.variable} bg-neutral-950 text-white antialiased flex items-center flex-col`}
       >
         <ViewTransitions>
           <ReactLenis root>

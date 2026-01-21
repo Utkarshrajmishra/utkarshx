@@ -74,6 +74,7 @@ const Hero = () => {
             buttonIcons[button.icon as keyof typeof buttonIcons];
           return (
             <Button
+            key={index}
               variant={button.variant as 'outline' | 'default'}
               className={cn(
                 button.variant === 'outline' && 'inset-shadow-indigo-500',
