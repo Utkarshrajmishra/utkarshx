@@ -19,7 +19,7 @@ export const HeaderConfig={
         },
         {
             label:'Blogs',
-            href:'/',
+            href:'/blogs',
         },
         {
             label:'Projects',
