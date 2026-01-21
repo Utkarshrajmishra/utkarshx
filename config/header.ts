@@ -23,7 +23,7 @@ export const HeaderConfig={
         },
         {
             label:'Projects',
-            href:'/'
+            href:'/projects',
         }
     ] as HeadItems[]
 }

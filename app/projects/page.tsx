@@ -11,10 +11,16 @@ import { ArrowRight, Github, Globe } from 'lucide-react';
 
 export default function Projects() {
   return (
-    <Wrapper className="mt-20">
-      <SectionHeading subHeading="Featured" heading="Blogs" />
+    <Wrapper className="mt-10">
+ <div className='text-center relative'>
+                <h1 className='text-5xl text-neutral-100 font-semibold'>Projects</h1>
+                <p className='text-muted-foreground mt-2 text-base'>My projects and work across different technologies and domains.</p>
+                <div className='mt-8 h-[1px] w-full bg-neutral-800'></div>
+            </div>
+    
+                <p className='text-left mt-8 text-neutral-100 text-xl font-semibold'>All Projects <span className='text-neutral-400 text-base'>({projects.length})</span></p>  
 
-      <div className="grid gap-6 font-host md:grid-cols-2 mt-8">
+      <div className="grid gap-6 md:grid-cols-2 mt-4 pb-8">
       {projects.map((project, index) => (
           <Link
             href={project.link}
