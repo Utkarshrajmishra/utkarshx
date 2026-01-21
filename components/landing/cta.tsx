@@ -1,8 +1,12 @@
+"use client"
+import { useState } from "react";
 import CustomIcon from "../svgs/patterns/CurveLine";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import CalComModal from "../common/calcom-modal";
 
 const CTA = () => {
+  const [open, setOpen]=useState(false)
   return (
     <section className="mt-20 relative overflow-hidden rounded-md border border-neutral-800 bg-neutral-900 px-6 py-10 flex flex-col items-center justify-center text-center">
 
@@ -20,6 +24,7 @@ const CTA = () => {
       </p>
 
       <Button
+        onClick={()=>setOpen(true)}
         variant="outline"
         className="mt-4 group relative z-10 flex items-center  bg-neutral-800 "
       >
@@ -51,6 +56,7 @@ const CTA = () => {
 </span>
         <span>Book a call</span>
       </Button>
+      <CalComModal open={open} onOpenChange={setOpen}/>
     </section>
   );
 };
