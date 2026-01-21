@@ -8,15 +8,11 @@ import OnekoCat from '@/components/common/onkeo-cat';
 import { Quote } from '@/components/common/quotes';
 import Footer from '@/components/common/footer';
 
-const host=Host_Grotesk({
-  variable:"--font-host",
-  subsets: ['latin'],
-})
 
-const hanken = Hanken_Grotesk({
-  variable: '--font-hanken',
-  subsets: ['latin'],
-});
+const hostGrotesk=Host_Grotesk({
+  variable:"--font-host-grotesk",
+  subsets:["latin"]
+})
 
 export const metadata: Metadata = {
   title: 'Utkarsh Raj Mishra - Full Stack Web Developer',
@@ -31,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-host ${host.variable} bg-neutral-950 text-white antialiased flex items-center flex-col`}
+        className={` ${hostGrotesk.variable} bg-neutral-950 text-white antialiased flex items-center flex-col`}
       >
         <ViewTransitions>
           <ReactLenis root>

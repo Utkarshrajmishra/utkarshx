@@ -33,13 +33,13 @@ const Hero = () => {
         );
       } else if (part.type === 'bold' && 'text' in part) {
         return (
-          <b key={part.key} className="text-white whitespace-pre-wrap">
+          <b key={part.key} className="text-white font-host whitespace-pre-wrap">
             {part.text}
           </b>
         );
       } else if (part.type === 'text' && 'text' in part) {
         return (
-          <span key={part.key} className="whitespace-pre-wrap">
+          <span key={part.key} className="whitespace-pre-wrap font-host">
             {part.text}
           </span>
         );
@@ -58,17 +58,17 @@ const Hero = () => {
         className="size-24 rounded-full bg-yellow-300"
       />
 
-      <div className="mt-8 flex flex-col gap-2">
-        <h1 className="text-4xl font-bold">
+      <div className="mt-8 font-host flex flex-col gap-2">
+        <h1 className="text-4xl tracking-tight font-bold">
           Hi, I'm {name} - <span className="text-neutral-500">{title}</span>
         </h1>
 
-        <div className="mt-4  flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base whitespace-pre-wrap text-neutral-500 md:text-xl">
+        <div className="mt-4 font-host flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base whitespace-pre-wrap text-neutral-500 md:text-xl">
           {renderDescription()}
         </div>
       </div>
 
-      <div className="mt-8 flex gap-4">
+      <div className="mt-8 flex gap-4 font-host">
         {buttons.map((button, index) => {
           const ButtonIcon =
             buttonIcons[button.icon as keyof typeof buttonIcons];

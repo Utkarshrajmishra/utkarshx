@@ -54,8 +54,8 @@ export default function MediumBlogs() {
             {/* <SectionHeading subHeading="Featured" heading="Blogs" /> */}
             <div className='text-center '>
                 <h1 className='text-5xl text-neutral-100 font-semibold'>Blogs</h1>
-                <p className='text-muted-foreground mt-2 text-lg'>Thoughts, tutorials, and insights on engineering, and programming.</p>
-                <div className='mt-8 h-[1px] w-full bg-neutral-700'></div>
+                <p className='text-muted-foreground mt-4 text-lg'>Thoughts, tutorials, and insights on engineering, and programming.</p>
+                <div className='mt-8 h-[1px] w-full bg-neutral-800'></div>
             </div>
             {hasError ?
                 <div className="text-muted-foreground border-border rounded-xl border-2 border-dashed p-8 text-center">

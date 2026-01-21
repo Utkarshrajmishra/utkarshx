@@ -6,7 +6,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
 export default function About() {
   return (
-    <Wrapper className="mt-20">
+    <Wrapper className="mt-20 font-host">
       <SectionHeading subHeading="About" heading="Me" />
       {/* About me */}
       <div className="mt-8 flex flex-col gap-4 md:flex-row">
