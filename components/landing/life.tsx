@@ -21,7 +21,7 @@ const setup = [
 function PersonalLife() {
   return (
     <Wrapper className="mt-20">
-      <SectionHeading subHeading="Development" heading="Setup" />
+      <SectionHeading subHeading="Personal" heading="Life" />
       <div className="mt-8 flex flex-col gap-4">
         {setup.map((item) => (
           <Link className="group" href={item.href} key={item.name}>

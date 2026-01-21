@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-hanken bg-neutral-950 text-white antialiased flex items-center flex-col`}
+        className={`font-host ${host.variable} bg-neutral-950 text-white antialiased flex items-center flex-col`}
       >
         <ViewTransitions>
           <ReactLenis root>
