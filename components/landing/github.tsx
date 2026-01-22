@@ -196,7 +196,7 @@ function filterLastYear(
               <div className="w-full overflow-x-auto">
                 <ActivityCalendar
                   data={contributions}
-                  blockSize={11}
+                  blockSize={10.5}
                   blockMargin={2}
                   fontSize={githubConfig.fontSize}
                   colorScheme={ 'dark'}

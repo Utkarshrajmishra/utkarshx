@@ -9,6 +9,7 @@ import MediumBlogs from "@/components/landing/blogs";
 import PersonalLife from "@/components/landing/life";
 import Projects from "@/components/landing/projects";
 import CTA from "@/components/landing/cta";
+import CalComContextProvider from "@/context/calcom-context";
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       <About />
       <Github />
       <MediumBlogs />
-
+<CalComContextProvider>
       <CTA />
+      </CalComContextProvider>
       <PersonalLife />
 
     </div>

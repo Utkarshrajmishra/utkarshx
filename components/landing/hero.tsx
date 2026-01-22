@@ -49,7 +49,7 @@ const Hero = () => {
   };
 
   return (
-    <Wrapper className="max-auto px-5">
+    <Wrapper className="max-auto ">
       <Image
         src={avatar}
         alt="hero"

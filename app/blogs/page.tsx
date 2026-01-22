@@ -50,11 +50,11 @@ export default function MediumBlogs() {
     }
 
     return (
-        <Wrapper className="mt-14 font-host">
+        <Wrapper className="mt-20 font-host">
             {/* <SectionHeading subHeading="Featured" heading="Blogs" /> */}
             <div className='text-center '>
 
-                <h1 className='text-5xl text-neutral-100 font-semibold'>Blogs</h1>
+                <h1 className='text-4xl text-neutral-100 font-bold'>Blogs</h1>
                 <p className='text-muted-foreground mt-2 text-base'>Thoughts, tutorials, and insights on engineering, and programming.</p>
                 <div className='mt-8 h-[1px] w-full bg-neutral-800'></div>
             </div>

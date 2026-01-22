@@ -8,7 +8,7 @@ import { ExperienceCard } from '../common/experience-card';
 
 export default function ExperienceSection() {
   return (
-    <Wrapper className="mt-20 px-5 font-host">
+    <Wrapper className="mt-20  font-host">
       <SectionHeading subHeading="Featured" heading="Experience" />
       <div className="mt-4 flex flex-col gap-8">
         {experiences.slice(0, 2).map((experience: Experience) => (

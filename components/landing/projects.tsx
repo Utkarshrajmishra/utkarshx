@@ -11,7 +11,7 @@ import { ArrowRight, Github, Globe } from 'lucide-react';
 
 export default function Projects() {
   return (
-    <Wrapper className="mt-20 font-host">
+    <Wrapper className="mt-20 font-host ">
       <SectionHeading subHeading="Featured" heading="Projects" />
 
       <div className="grid gap-6 md:grid-cols-2 mt-8">

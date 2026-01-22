@@ -6,7 +6,7 @@ import { PlayIcon } from 'lucide-react';
 import Wrapper from '../common/wrapper';
 const Spotify = () => {
   return (
-    <Wrapper className='px-5 font-host'>
+    <Wrapper className=' font-host'>
       {' '}
       <section className="mt-8  flex justify-between items-center  bg-[#131313] rounded-md border border-dashed border-neutral-700  p-3 h-fit w-full">
         <div className="gap-3 flex  items-center">

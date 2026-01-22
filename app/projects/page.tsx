@@ -11,9 +11,9 @@ import { ArrowRight, Github, Globe } from 'lucide-react';
 
 export default function Projects() {
   return (
-    <Wrapper className="mt-10">
+    <Wrapper className="mt-20">
  <div className='text-center relative'>
-                <h1 className='text-5xl text-neutral-100 font-semibold'>Projects</h1>
+                <h1 className='text-4xl text-neutral-100 font-bold'>Projects</h1>
                 <p className='text-muted-foreground mt-2 text-base'>My projects and work across different technologies and domains.</p>
                 <div className='mt-8 h-[1px] w-full bg-neutral-800'></div>
             </div>
