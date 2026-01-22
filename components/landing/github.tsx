@@ -9,6 +9,7 @@ import SectionHeading from '../common/section-heading';
 import Wrapper from '../common/wrapper';
 import GithubIcon from '../svgs/Github';
 import { Button } from '../ui/button';
+import { useStatus } from '@/context/status-context';
 
 /**
  * react-activity-calendar exports a NAMED component.
@@ -32,11 +33,11 @@ type GitHubContributionResponse = {
   date: string;
   contributionCount: number;
   contributionLevel:
-    | 'NONE'
-    | 'FIRST_QUARTILE'
-    | 'SECOND_QUARTILE'
-    | 'THIRD_QUARTILE'
-    | 'FOURTH_QUARTILE';
+  | 'NONE'
+  | 'FIRST_QUARTILE'
+  | 'SECOND_QUARTILE'
+  | 'THIRD_QUARTILE'
+  | 'FOURTH_QUARTILE';
 };
 
 /**
@@ -53,7 +54,7 @@ function filterLastYear(
   });
 }
 
- function Github() {
+function Github() {
   const { theme } = useTheme();
 
   const [contributions, setContributions] =
@@ -62,12 +63,13 @@ function filterLastYear(
     useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+  const { setStatusError, setLoader, setCommitNumber } = useStatus()
 
   useEffect(() => {
     async function fetchContributions() {
       try {
         setIsLoading(true);
-
+        setLoader(true)
         const response = await fetch(
           `${githubConfig.apiUrl}/${githubConfig.username}.json`,
         );
@@ -104,7 +106,7 @@ function filterLastYear(
             count: Number(item.contributionCount ?? 0),
             level:
               levelMap[
-                item.contributionLevel as keyof typeof levelMap
+              item.contributionLevel as keyof typeof levelMap
               ] ?? 0,
           }));
 
@@ -118,14 +120,19 @@ function filterLastYear(
         );
 
         setContributions(filterLastYear(parsed));
+        const commits = filterLastYear(parsed)
+        // console.log(commits[commits.length - 2].count)
+        setCommitNumber(commits[commits.length - 2].count)
       } catch (error) {
         console.error(
           'Failed to fetch GitHub contributions:',
           error,
         );
         setHasError(true);
+        setStatusError(true)
       } finally {
         setIsLoading(false);
+        setLoader(false)
       }
     }
 
@@ -134,12 +141,11 @@ function filterLastYear(
 
   return (
     <Wrapper className="mt-20">
-              <SectionHeading subHeading="Featured" heading= {githubConfig.title} />
+      <SectionHeading subHeading="Featured" heading={githubConfig.title} />
 
       <div className="space-y-6">
-        {/* Header */}
         <div className='flex justify-between items-center'>
-         
+
           <p className="text-neutral-200 text-sm">
             My {" "}
             {githubConfig.subtitle}
@@ -199,7 +205,7 @@ function filterLastYear(
                   blockSize={10.5}
                   blockMargin={2}
                   fontSize={githubConfig.fontSize}
-                  colorScheme={ 'dark'}
+                  colorScheme={'dark'}
                   maxLevel={githubConfig.maxLevel}
                   theme={githubConfig.theme}
                   labels={{

@@ -7,13 +7,14 @@ import Image from "next/image";
 import CalComModal from "../common/calcom-modal";
 import { Plus } from "lucide-react";
 import { useCalCom } from "@/context/calcom-context";
+import Wrapper from "../common/wrapper";
 
 const CTA = () => {
 
   const { open, setOpen } = useCalCom()
 
   return (
-
+<Wrapper>
     <section className="mt-20 relative  overflow-hidden rounded-md border border-neutral-800 bg-neutral-900 px-6 py-10 flex flex-col items-center justify-center text-center">
 
       <div className="absolute inset-0 pointer-events-none transition-transform duration-700 group group-hover:scale-105">
@@ -66,6 +67,7 @@ const CTA = () => {
 
       <CalComModal open={open} onOpenChange={setOpen} />
     </section>
+    </Wrapper>
   );
 };
 

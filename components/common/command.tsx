@@ -66,8 +66,8 @@ export function Commands() {
             >
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent 
         translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-                Search
-                <span className="text-[0.65rem] text-neutral-400">(Ctrl + Q)</span>
+                Shortcuts
+                <span className="text-[0.65rem] text-neutral-400 hidden md:block">(Ctrl + Q)</span>
             </button>
 
             <CommandDialog open={openModal} onOpenChange={setOpenModal} className="border border-neutral-500">
