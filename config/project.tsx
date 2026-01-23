@@ -83,9 +83,9 @@ export const projects: Project[] = [
   {
     title: 'Algochunk',
     description:
-      '',
-    overview: "A platform offering 30 Data Structures and Algorithms (DSA) challenges, releasing one challenge per day to build consistent learning habits",
-    image: '/project/appwrite.png',
+      'A platform offering 30 Data Structures and Algorithms (DSA) challenges, releasing one challenge per day to build consistent learning habits.',
+    overview: "A platform offering 30 Data Structures and Algorithms (DSA) challenges, releasing one challenge per day to build consistent learning habits. Built an interactive practice environment for front-end machine coding problems using a custom React-based editor integrated with StackBlitz to deliver a seamless coding experience. Incorporated Google Gemini for AI-powered code reviews and developer assistance, enhancing code quality, debugging efficiency, and overall learning outcomes. Further optimized performance through intelligent caching and local storage strategies, reducing data retrieval times and ensuring a smooth, responsive user experience.",
+    image: '/projects/algochunk.png',
     role: 'Full Stack',
     team: "Solo",
     features: [
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     title: 'XCode',
     description: "A collaborative online code execution platform that enables users to write and run code in multiple programming languages with real-time execution",
     overview: "A collaborative online code execution platform that enables users to write and run code in multiple programming languages with real-time execution. It implements Socket.io and WebRTC for real-time collaboration, allowing multiple users to code together seamlessly with integrated video chat for smooth communication.",
-    image: '/project/syncify.png',
+    image: '/projects/collobrative-code-editor.png',
     role: 'Full Stack',
     team: "Solo",
     features: [

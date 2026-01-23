@@ -5,8 +5,10 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, Globe } from "lucide-react"
 import Github from "@/components/svgs/Github"
+import { cn } from "@/lib/utils"
+import NotFound from "@/app/not-found"
 export default async function Page({
-    params
+params
 }: {
     params: Promise<{ slug: string }>
 }) {
@@ -16,23 +18,34 @@ export default async function Page({
     const project: Project | undefined = projectSlug(slug)
 
     if (!project) {
-        return <p>Not found</p>
+        return <NotFound />
     }
-
-    console.log(project)
-
     return (
         <Wrapper className="font-host ">
-            <Button variant="outline" className="text-sm h-8 mt-18 w-fit flex gap-1 items-center"><ChevronLeft className="size-4.5" /> Back</Button>
-            <article className="mt-10 flex flex-col gap-6">
-                <Image src={project.image} alt={project.title} width={1000} height={1000} className="rounded-md border-2 border-neutral-900" />
-                <p className="text-neutral-100 text-4xl font-semibold">{project.title}</p>
-                <p className="text-lg text-neutral-400">{project.description}</p>
-                <div className="flex gap-4">
-                    <Button><Globe /> Live Demo</Button>
-                    <Button variant="outline"><Github /> Source Code</Button>
+            <Button variant="outline" className="text-sm h-8 mt-18 w-fit flex gap-1 items-center"><ChevronLeft className="size-4.5" /> Back to projects</Button>
+            <article className="mt-10 flex flex-col gap-12">
+                <div className="flex flex-col gap-6">                <Image src={project.image} alt={project.title} width={1000} height={1000} className="rounded-md border-2 border-neutral-900" />
+                    <div className="flex justify-between items-center ">
+                        <p className="text-neutral-100 text-4xl font-semibold">{project.title}</p>
+                        <p
+                            className={cn(
+                                "text-xs py-0.5 rounded-lg px-3",
+                                project.isWorking
+                                    ? "text-green-700 bg-green-900/20"
+                                    : "text-red-700 bg-red-900/20"
+                            )}
+                        >
+                            {project.isWorking ? "Completed" : "Ongoing"}
+                        </p>
+                    </div>
+                    <p className="text-lg text-neutral-400">{project.description}</p>
+                    <div className="flex gap-4">
+                        <Button className="group"><Globe className="group-hover:animate-bounce" /> Live Demo</Button>
+                        <Button variant="outline" className="group"><Github className="group-hover:animate-bounce" /> Source Code</Button>
+                    </div>
                 </div>
                 <div className="h-[0.7px] bg-neutral-700 w-full"></div>
+
                 <div>
                     <h2 className="text-neutral-100 text-2xl font-semibold">Overview</h2>
                     <p className=" text-neutral-500 mt-4">{project.overview}</p>
