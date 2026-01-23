@@ -6,7 +6,6 @@
     buttonText: 'View on Meidum',
   },
 
-  // Loading state configuration
   loadingState: {
     title: 'Loading blogs...',
     description: 'Fetching my Medium activity data',

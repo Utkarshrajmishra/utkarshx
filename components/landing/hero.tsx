@@ -69,7 +69,7 @@ const Hero = () => {
           <div className={cn("h-2 w-2 bg-slate-500 rounded-full", loader && "animate-pulse", !loader && !statusError && commitNumber>0 && "bg-green-500", statusError && "bg-red-500")}></div>
 
         </div>
-        <div className={cn("absolute opacity-0 hover:opacity-100 transition-all duration-300 z-100 bg-neutral-900 border font-host border-neutral-700 rounded-b-md rounded-r-md p-2 left-25 top-20", isHovered && "opacity-100")}>
+        <div className={cn("absolute opacity-0 transition-all duration-300 z-100 bg-neutral-900 border font-host border-neutral-700 rounded-b-md rounded-r-md p-2 left-25 top-20", isHovered && "opacity-100")}>
           {loader ? (
             <div className='flex flex-col justify-center items-center'>
               <Loader2 className='size-4 animate-spin text-neutral-500' />
@@ -82,7 +82,7 @@ const Hero = () => {
           ) : (
            commitNumber>0 ? <>
               <p className='text-sm text-neutral-300'><b>Active Today</b></p>
-              <p className='text-sm text-neutral-500'><b>{commitNumber} {commitNumber > 2 ? 'commits' : 'commit'} </b> made today</p>
+              <p className='text-sm text-neutral-500'><b>{commitNumber} {commitNumber >= 2 ? 'commits' : 'commit'} </b> made today</p>
             </> :
             <>
              <p className='text-sm text-neutral-300'>Offline Today</p>
