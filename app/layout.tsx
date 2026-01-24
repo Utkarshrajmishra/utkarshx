@@ -17,6 +17,7 @@ const hankenGrotesk = Hanken_Grotesk({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://utkarshx.vercel.app/'),
   title: 'Utkarsh Raj Mishra - Full Stack Web Developer',
   description: 'Utkarsh Raj Mishra - Portfolio',
   openGraph: {
