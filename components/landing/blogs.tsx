@@ -130,7 +130,7 @@ export default function MediumBlogs() {
       </div>
       <div className="mt-8 flex justify-center">
         <Button variant="outline">
-          <Link href="/work-experience">Show all blogs</Link>
+          <Link href="/blogs">Show all blogs</Link>
         </Button>
       </div>
       </>

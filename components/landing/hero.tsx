@@ -54,7 +54,7 @@ const Hero = () => {
       return null;
     });
   };
-
+  
   return (
     <Wrapper className="max-auto ">
       <div className='relative'>

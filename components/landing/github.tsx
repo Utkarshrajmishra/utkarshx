@@ -121,8 +121,7 @@ function Github() {
 
         setContributions(filterLastYear(parsed));
         const commits = filterLastYear(parsed)
-        // console.log(commits[commits.length - 2].count)
-        setCommitNumber(commits[commits.length - 2].count)
+        setCommitNumber(commits[commits.length - 1].count)
       } catch (error) {
         console.error(
           'Failed to fetch GitHub contributions:',

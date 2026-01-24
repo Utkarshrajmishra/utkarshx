@@ -188,7 +188,7 @@ export const projects: Project[] = [
     description:
       'GitMap is a tool that transforms your Git commit history and branches into an interactive mind map.',
 
-    image: '/project/pasandida.png',
+    image: '/projects/git-map.png',
     overview: "GitMap is a tool that transforms your Git commit history and branches into an interactive mind map, making it easier to understand and explore your project's evolution.",
     role: 'Full Stack',
     team: "Solo",
@@ -229,7 +229,7 @@ export const projects: Project[] = [
     title: 'React Snippet Box',
     description:
       'A platform for exploring react machine coding challenges solutions.',
-    image: '/project/quest.png',
+    image: '/projects/react-snippet.png',
     overview: "GitMap is a tool that transforms your Git commit history and branches into an interactive mind map, making it easier to understand and explore your project's evolution.",
     role: 'Full Stack',
     team: "Solo",
