@@ -14,7 +14,7 @@ import Github from "@/components/svgs/Github";
 import LinkedIn from "@/components/svgs/LinkedIn";
 import Mail from "@/components/svgs/Mail";
 import X from "@/components/svgs/X";
-import {  Youtube, YoutubeIcon } from "lucide-react";
+import { Youtube, YoutubeIcon } from "lucide-react";
 import Medium from "@/components/svgs/Medium";
 import Instagram from "@/components/svgs/Instagram";
 import { Peerlist } from "@/components/svgs/Peerlist";
@@ -104,41 +104,41 @@ export const socialLinks = [
   // },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/ramxcodes/",
+    href: "https://www.linkedin.com/in/utkarsh-raj-mishra-3b7018283/",
     icon: LinkedIn,
   },
   {
     name: "Github",
-    href: "https://github.com/ramxcodes",
+    href: "https://github.com/Utkarshrajmishra",
     icon: Github,
   },
-  
-   {
+
+  {
     name: "Youtube",
-    href: "mailto:ramxcodes@gmail.com",
+    href: "https://www.youtube.com/@Utkarsh_Raj_Mishra",
     icon: YoutubeIcon,
   },
 
   {
     name: "Instagram",
-    href: "mailto:ramxcodes@gmail.com",
+    href: "https://www.instagram.com/utk_075",
     icon: Instagram,
   },
 
   {
     name: "Medium",
-    href: "mailto:ramxcodes@gmail.com",
+    href: "https://medium.com/@utkarshrajmishra",
     icon: Medium,
   },
 
   {
     name: "Peerlist",
-    href: "mailto:ramxcodes@gmail.com",
+    href: "https://peerlist.io/utk_075",
     icon: Peerlist,
   },
   {
     name: "Email",
-    href: "mailto:ramxcodes@gmail.com",
+    href: "mailto:utkarshrajmishra811545@gmail.com",
     icon: Mail,
   },
 ];
