@@ -61,7 +61,7 @@ export const projects: Project[] = [
       "Socket.io : Enables real-time bi-directional communication",
       "Express.js: Handles API routes and middleware"
     ],
-    video: 'https://ik.imagekit.io/hokb3mrdr/notesbuddy.mp4?tr=orig',
+    video: 'https://keyboardwars.vercel.app/',
     link: 'https://notesbuddy.in',
     technologies: [
       { name: 'Next.js', icon: <div className='size-7'> <NextJs key="nextjs" /> </div> },
@@ -73,10 +73,10 @@ export const projects: Project[] = [
       { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
       { name: 'MDX', icon: <MDXIcon key="mdx" /> },
     ],
-    github: 'https://github.com/ramxcodes/notesbuddy',
-    live: 'https://notesbuddy.in',
+    github: 'https://github.com/Utkarshrajmishra/KeyboardWars',
+    live: 'https://keyboardwars.vercel.app/',
     details: true,
-    projectDetailsPageSlug: '/projects/notesbuddy',
+    projectDetailsPageSlug: '/projects/keyboardwars',
     isWorking: true,
     slug: 'keyboardwars'
   },
@@ -114,18 +114,18 @@ export const projects: Project[] = [
       "Gemini : AI-Powered Code Review & Assistant",
 
     ],
-    video: 'https://ik.imagekit.io/hokb3mrdr/appwrite.mp4',
-    link: 'https://mcp.ramx.in/',
+    video: 'https://algochunk.vercel.app/',
+    link: 'https://algochunk.vercel.app/',
     technologies: [
       { name: 'TypeScript', icon: <div className='size-7'> <TypeScript key="typescript" /> </div> },
       { name: 'Bun', icon: <div className='size-7'> <Bun key="bun" /> </div> },
       { name: 'Vercel', icon: <div className='size-7'> <Vercel key="vercel" /> </div> },
       { name: 'Appwrite', icon: <div className='size-7'> <Appwrite key="appwrite" /> </div> },
     ],
-    github: 'https://github.com/ramxcodes/mcp-server',
-    live: 'https://mcp.ramx.in/',
+    github: 'https://github.com/Utkarshrajmishra/algochunk',
+    live: 'https://algochunk.vercel.app/',
     details: true,
-    projectDetailsPageSlug: '/projects/appwrite-mcp-server',
+    projectDetailsPageSlug: '/projects/algochunk',
     isWorking: true,
     slug: 'algochunk'
   },
@@ -165,8 +165,8 @@ export const projects: Project[] = [
       "Socket.io: Enables real-time bi-directional communication",
       "Express.js: Handles API routes and middleware"
     ],
-    video: 'https://ik.imagekit.io/hokb3mrdr/syncify.mp4',
-    link: 'https://syncify.rocks',
+    video: 'https://collobrative-code-editor.vercel.app/code-editor/ae6c7f17-cc5e-4062-a7a3-15bc2193ca1e',
+    link: 'https://collobrative-code-editor.vercel.app/code-editor/ae6c7f17-cc5e-4062-a7a3-15bc2193ca1e',
     technologies: [
       { name: 'React', icon: <div className='size-7'> <ReactIcon key="react" /> </div> },
       { name: 'Node.js', icon: <div className='size-7'> <NodeJs key="nodejs" /> </div> },
@@ -176,10 +176,10 @@ export const projects: Project[] = [
       { name: 'shadcn/ui', icon: <div className='size-7'> <Shadcn key="shadcn" /> </div> },
       { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
     ],
-    github: 'https://github.com/ramxcodes/syncify',
-    live: 'https://syncify.rocks',
+    github: 'https://github.com/Utkarshrajmishra/collobrative-code-editor',
+    live: 'https://collobrative-code-editor.vercel.app/code-editor/ae6c7f17-cc5e-4062-a7a3-15bc2193ca1e',
     details: true,
-    projectDetailsPageSlug: '/projects/syncify',
+    projectDetailsPageSlug: '/projects/xcode',
     isWorking: true,
     slug: 'xcode'
   },
@@ -209,8 +209,8 @@ export const projects: Project[] = [
 
     ],
     backend: [],
-    video: 'https://ik.imagekit.io/hokb3mrdr/pasandida.mp4',
-    link: 'https://www.pasandidaurat.com/',
+    video: 'https://github.com/Utkarshrajmishra/gitmap',
+    link: 'https://github.com/Utkarshrajmishra/gitmap',
     technologies: [
       { name: 'Next.js', icon: <div className='size-7'> <NextJs key="nextjs" /> </div> },
       { name: 'TypeScript', icon: <div className='size-7'> <TypeScript key="typescript" /> </div> },
@@ -219,10 +219,11 @@ export const projects: Project[] = [
       { name: 'Tailwind CSS', icon: <div className='size-7'> <TailwindCss key="tailwindcss" /> </div> },
       { name: 'Socket.io', icon: <div className='size-7'> <SocketIo key="socketio" /> </div> },
     ],
-    live: 'https://www.pasandidaurat.com/',
+    github:'https://github.com/Utkarshrajmishra/gitmap',
+    live: 'https://gitmap-sd6y.vercel.app/',
     details: true,
-    projectDetailsPageSlug: '/projects/pasandida-aurat',
-    isWorking: false,
+    projectDetailsPageSlug: '/projects/gitmap',
+    isWorking: true,
     slug: 'git-map'
   },
   {
@@ -250,8 +251,8 @@ export const projects: Project[] = [
 
     ],
     backend: [],
-    video: 'https://ik.imagekit.io/hokb3mrdr/quest.mp4',
-    link: 'https://quest.ramx.in/',
+    video: 'https://react-box-delta.vercel.app/',
+    link: 'https://react-box-delta.vercel.app/',
     technologies: [
       { name: 'Next.js', icon: <div className='size-7'> <NextJs key="nextjs" /> </div> },
       { name: 'TypeScript', icon: <div className='size-7'> <TypeScript key="typescript" /> </div> },
@@ -260,8 +261,8 @@ export const projects: Project[] = [
       { name: 'MDX', icon: <div className='size-7'> <MDXIcon key="mdx" /> </div> },
       { name: 'shadcn/ui', icon: <div className='size-7'> <Shadcn key="shadcn" /> </div> },
     ],
-    github: 'https://github.com/ramxcodes/the-quest',
-    live: 'https://quest.ramx.in/',
+    github: 'https://github.com/Utkarshrajmishra/React-Box',
+    live: 'https://react-box-delta.vercel.app/',
     details: true,
     projectDetailsPageSlug: '/projects/the-quest',
     isWorking: true,

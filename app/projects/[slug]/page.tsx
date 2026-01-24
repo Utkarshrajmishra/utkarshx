@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils"
 import NotFound from "@/app/not-found"
 import Link from "next/link"
 export default async function Page({
-params
+    params
 }: {
     params: Promise<{ slug: string }>
 }) {
@@ -23,7 +23,7 @@ params
     }
     return (
         <Wrapper className="font-host ">
-           <Link href="/projects"><Button variant="outline" className="text-sm  cursor-pointer h-8 mt-18 w-fit flex gap-1 items-center"><ChevronLeft className="size-4.5" /> Back to projects</Button></Link>
+            <Link href="/projects"><Button variant="outline" className="text-sm  cursor-pointer h-8 mt-18 w-fit flex gap-1 items-center"><ChevronLeft className="size-4.5" /> Back to projects</Button></Link>
             <article className="mt-10 flex flex-col gap-12">
                 <div className="flex flex-col gap-6">                <Image src={project.image} alt={project.title} width={1000} height={1000} className="rounded-md border-2 border-neutral-900" />
                     <div className="flex justify-between items-center ">
@@ -41,8 +41,8 @@ params
                     </div>
                     <p className="text-lg text-neutral-400">{project.description}</p>
                     <div className="flex gap-4">
-                        <Button className="group"><Globe className="group-hover:animate-bounce" /> Live Demo</Button>
-                        <Button variant="outline" className="group"><Github className="group-hover:animate-bounce" /> Source Code</Button>
+                        <Link href={project.live}> <Button className="group cursor-pointer" ><Globe className="group-hover:animate-bounce " /> Live Demo</Button></Link>
+                        <Link href={project.github}> <Button variant="outline" className="group cursor-pointer"><Github className="group-hover:animate-bounce" /> Source Code</Button></Link>
                     </div>
                 </div>
                 <div className="h-[0.7px] bg-neutral-700 w-full"></div>
@@ -90,7 +90,7 @@ params
                             })}
                         </ul>
                     </div>
-                  {project.backend.length>0 && <div className="mt-4">
+                    {project.backend.length > 0 && <div className="mt-4">
                         <h3 className="text-neutral-100 text-xl font-semibold">Backend</h3>
                         <ul className="list-disc list-inside mt-4">
                             {project.backend.map((backend: string, index: number) => {
@@ -108,7 +108,7 @@ params
                                 )
                             })}
                         </ul>
-                        </div>}
+                    </div>}
                 </div>
             </article>
         </Wrapper>

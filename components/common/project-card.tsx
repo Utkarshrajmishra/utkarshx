@@ -32,8 +32,8 @@ const ProjectCard=({project, index}:{project:Project, index:number})=>{
                   {project.title}
                 </h3>
                 <div className='flex gap-2'>
-                  <Link href={`/projects/${project.link}`}><Globe className='size-4 text-neutral-400 hover:text-white transition-all' /></Link>
-                  <Link href={`/projects/${project.github}`}>   <Github className='size-4 text-neutral-400 hover:text-white transition-all' /></Link>
+                  <Link href={project.live}><Globe className='size-4 text-neutral-400 hover:text-white transition-all' /></Link>
+                  <Link href={project.github}>   <Github className='size-4 text-neutral-400 hover:text-white transition-all' /></Link>
                 </div>
               </div>
 

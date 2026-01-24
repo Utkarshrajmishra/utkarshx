@@ -13,7 +13,7 @@ export interface Project {
   reason:string[];
   fontend:string[];
   backend:string[];
-  github?: string;
+  github: string;
   live: string;
   details: boolean;
   projectDetailsPageSlug: string;
