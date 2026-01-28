@@ -1,13 +1,6 @@
 'use client';
-import { cn } from '@/lib/utils';
-import Image from 'next/image';
-import Link from 'next/link';
 import Wrapper from '@/components/common/wrapper';
-import SectionHeading from '@/components/common/section-heading';
-import { Button } from '@/components/ui/button';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { projects } from '@/config/project';
-import { ArrowRight, Github, Globe } from 'lucide-react';
 import ProjectCard from '@/components/common/project-card';
 
 export default function Projects() {
