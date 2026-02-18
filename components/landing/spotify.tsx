@@ -3,6 +3,7 @@ import SpotifyLogo from '../svgs/Spotify';
 import { Button } from '../ui/button';
 import { Play } from 'next/font/google';
 import { PlayIcon } from 'lucide-react';
+import Link from 'next/link';
 import Wrapper from '../common/wrapper';
 const Spotify = () => {
   return (
@@ -35,9 +36,11 @@ const Spotify = () => {
           </div>
         </div>
         <div>
-          <Button variant="outline" className="text-sm">
+          <Link target='_blank' href="https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq">
+          <Button variant="outline" className="text-sm cursor-pointer">
             Open in Spotify <PlayIcon />
           </Button>
+          </Link>
         </div>
       </section>
     </Wrapper>
