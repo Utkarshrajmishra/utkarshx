@@ -11,7 +11,7 @@ import CalComContextProvider from "@/context/calcom-context"
 
 const Header = () => {
     return (
-        <div className="sticky top-0 z-20  py-4 w-full flex justify-center backdrop-blur-sm">
+        <div className="sticky top-0 z-20  py-4 w-full flex justify-center  backdrop-blur-sm">
             <Wrapper className="max-auto ">
                 <div className="flex items-center justify-between ">
                     <div className="flex place-items-baseline gap-4">

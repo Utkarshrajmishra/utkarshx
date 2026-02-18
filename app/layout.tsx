@@ -7,6 +7,7 @@ import { ViewTransitions } from 'next-view-transitions';
 import OnekoCat from '@/components/common/onkeo-cat';
 import { Quote } from '@/components/common/quotes';
 import Footer from '@/components/common/footer';
+import Grain from '@/components/landing/grain';
 
 
 
@@ -42,15 +43,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${hankenGrotesk.variable} bg-neutral-950 text-white antialiased flex items-center flex-col`}
+        className={` ${hankenGrotesk.variable}  relative z-40 bg-neutral-950 text-white antialiased flex items-center flex-col`}
       >
         <ViewTransitions>
           <ReactLenis root>
+            {/* <Grain/> */}
+            <div className='relative z-40 '>
             <Header />
             {children}
             <OnekoCat />
             <Quote />
             <Footer />
+            </div>
           </ReactLenis>
         </ViewTransitions>
       </body>

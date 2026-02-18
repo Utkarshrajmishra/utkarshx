@@ -8,6 +8,8 @@ import Github from "@/components/svgs/Github"
 import { cn } from "@/lib/utils"
 import NotFound from "@/app/not-found"
 import Link from "next/link"
+import { Tooltip, TooltipContent } from "@/components/ui/tooltip"
+import { TooltipTrigger } from "@radix-ui/react-tooltip"
 export default async function Page({
     params
 }: {
@@ -40,6 +42,23 @@ export default async function Page({
                         </p>
                     </div>
                     <p className="text-lg text-neutral-400">{project.description}</p>
+
+                    
+
+              <div className="flex flex-wrap gap-2">
+                {project.technologies?.map((tag, i) => (
+                  <Tooltip key={tag.name + i}>
+                    <TooltipTrigger asChild>
+                      <span className="cursor-pointer">
+                        {tag.icon}
+                      </span>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{tag.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                ))}
+              </div>
                     <div className="flex gap-4">
                         <Link href={project.live}> <Button className="group cursor-pointer" ><Globe className="group-hover:animate-bounce " /> Live Demo</Button></Link>
                         <Link href={project.github}> <Button variant="outline" className="group cursor-pointer"><Github className="group-hover:animate-bounce" /> Source Code</Button></Link>

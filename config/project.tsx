@@ -43,8 +43,8 @@ export const projects: Project[] = [
     "Performance-optimized animations",
   ],
   reason: [
-    "To create a focused UI micro-library that solves the repetitive task of designing high-quality animated buttons",
-    "To explore component architecture, design systems, and animation best practices",
+    "While building products, I kept rewriting the same button patterns — glow, gradient, magnetic hover, animated borders, tiny micro-interactions. After doing this way too many times, I decided to systematize them. So I built FluxButtons — a growing library of beautifully crafted React + Tailwind buttons made for real products ",
+    
   ],
   fontend: [
     "Next.js: Framework for building the documentation and preview platform",
@@ -62,14 +62,15 @@ export const projects: Project[] = [
   technologies: [
     { name: 'Next.js', icon: <div className='size-7'> <NextJs key="nextjs" /> </div> },
     { name: 'TypeScript', icon: <div className='size-7'> <TypeScript key="typescript" /> </div> },
-    { name: 'React', icon: <div className='size-7'> <ReactIcon key="react" /> </div> },
-    { name: 'Vercel', icon: <div className='size-7'> <Vercel key="vercel" /> </div> },
+ { name: 'React', icon: <div className='size-7'> <ReactIcon key="react" /> </div> },
+      { name: 'Vercel', icon: <div className='size-7'> <Vercel key="vercel" /> </div> },
+   
     { name: 'Tailwind CSS', icon: <div className='size-7'> <TailwindCss key="tailwindcss" /> </div> },
-    { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-    { name: 'Framer Motion', icon: <Framer key="framermotion" /> },
-    { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+         { name: 'shadcn/ui', icon: <div className='size-7'> <Shadcn key="shadcn" /> </div> },
+
+    { name: 'MDX', icon: <div className='size-7'><MDXIcon key="mdx" /> </div>},
   ],
-  github: 'https://github.com/Utkarshrajmishra/FluxButtons',
+  github: 'https://github.com/Utkarshrajmishra/buttoncn',
   live: 'https://fluxbuttons.vercel.app/',
   details: true,
   projectDetailsPageSlug: '/projects/fluxbuttons',
