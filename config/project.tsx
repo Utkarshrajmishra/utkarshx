@@ -1,6 +1,7 @@
 import Appwrite from '@/components/technologies/Appwrite';
 import Bun from '@/components/technologies/Bun';
 import ExpressJs from '@/components/technologies/ExpressJs';
+import Framer from '@/components/technologies/Framer';
 import Github from '@/components/technologies/Github';
 import MDXIcon from '@/components/technologies/MDXIcon';
 import MongoDB from '@/components/technologies/MongoDB';
@@ -22,6 +23,60 @@ import { Project } from '@/types/projects';
 
 
 export const projects: Project[] = [
+ {
+  title: 'FluxButtons',
+  description:
+    'A curated collection of modern, animated, and production-ready buttons designed to elevate your UI instantly.',
+  image: '/projects/fluxbuttons.png',
+  role: 'Frontend / UI Engineer',
+  team: "Solo",
+  overview:
+    "FluxButtons is a modern UI component library focused exclusively on beautifully crafted, animated buttons for web applications. Built with performance and developer experience in mind, it provides customizable, accessible, and production-ready button components that can be seamlessly integrated into any React or Next.js project. Each button is designed with motion, gradients, hover effects, and clean minimal aesthetics, making it easy for developers to enhance their UI without spending hours on styling. The platform also includes live previews, copy-paste snippets, and easy customization options to accelerate development workflows.",
+  features: [
+    "Collection of modern animated buttons",
+    "Live preview with instant interaction",
+    "Copy-paste ready code snippets",
+    "Customizable variants and styles",
+    "Responsive and accessible components",
+    "Minimal and production-ready design",
+    "Dark and light theme compatibility",
+    "Performance-optimized animations",
+  ],
+  reason: [
+    "To create a focused UI micro-library that solves the repetitive task of designing high-quality animated buttons",
+    "To explore component architecture, design systems, and animation best practices",
+  ],
+  fontend: [
+    "Next.js: Framework for building the documentation and preview platform",
+    "TypeScript: Ensures type safety and scalable component development",
+    "Tailwind CSS: Rapid styling with utility-first approach",
+    "Shadcn UI: Structured and accessible component patterns",
+    "Framer Motion: Smooth and performant animations",
+    "MDX: For structured and developer-friendly documentation",
+  ],
+  backend: [
+    "Vercel: Deployment and hosting",
+  ],
+  video: 'https://fluxbuttons.vercel.app/',
+  link: 'https://fluxbuttons.vercel.app/',
+  technologies: [
+    { name: 'Next.js', icon: <div className='size-7'> <NextJs key="nextjs" /> </div> },
+    { name: 'TypeScript', icon: <div className='size-7'> <TypeScript key="typescript" /> </div> },
+    { name: 'React', icon: <div className='size-7'> <ReactIcon key="react" /> </div> },
+    { name: 'Vercel', icon: <div className='size-7'> <Vercel key="vercel" /> </div> },
+    { name: 'Tailwind CSS', icon: <div className='size-7'> <TailwindCss key="tailwindcss" /> </div> },
+    { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+    { name: 'Framer Motion', icon: <Framer key="framermotion" /> },
+    { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+  ],
+  github: 'https://github.com/Utkarshrajmishra/FluxButtons',
+  live: 'https://fluxbuttons.vercel.app/',
+  details: true,
+  projectDetailsPageSlug: '/projects/fluxbuttons',
+  isWorking: true,
+  slug: 'fluxbuttons'
+},
+
   {
     title: 'KeyboardWars',
     description:
