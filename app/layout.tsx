@@ -40,18 +40,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${hankenGrotesk.variable} px-20  relative z-0 bg-neutral-950 text-white antialiased flex items-center flex-col`}
+        className={` ${hankenGrotesk.variable}  px-0 md:px-20  relative z-0 bg-neutral-950 text-white antialiased flex items-center flex-col`}
       >
         <ViewTransitions>
           <ReactLenis root>
-            <div className="fixed inset-0 bg-pattern z-0 pointer-events-none"></div>
-            <div className="relative border  border-neutral-900 z-0 w-full bg-neutral-950  flex flex-col items-center justify-center">
-            
+            <div className="fixed hidden md:flex inset-0 bg-pattern z-0 pointer-events-none"></div>
+            <div className="relative border  border-neutral-900 z-0 w-full bg-neutral-950  flex flex-col items-center ">
               <Header />
-              {children}
-              <OnekoCat />
-              <Quote />
-              <Footer />
+              <div className='flex flex-col items-center'>
+                <Grain />
+
+                {children}
+                <OnekoCat />
+                <Quote />
+                <Footer />
+              </div>
             </div>
           </ReactLenis>
         </ViewTransitions>

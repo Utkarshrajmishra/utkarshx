@@ -62,7 +62,7 @@ export function Commands() {
         <>
             <button
                 onClick={() => setOpenModal(true)}
-                className="text-xs px-3 h-8 flex relative group items-center justify-center rounded-md gap-1.5 border border-neutral-700 cursor-pointer bg-gradient-to-b from-neutral-800 to-neutral-950 overflow-hidden  text-white transition-colors duration-200"
+                className="text-xs px-3 h-8 hidden md:flex relative group items-center justify-center rounded-md gap-1.5 border border-neutral-700 cursor-pointer bg-gradient-to-b from-neutral-800 to-neutral-950 overflow-hidden  text-white transition-colors duration-200"
             >
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent 
         translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />

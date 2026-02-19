@@ -1,11 +1,11 @@
 const Grain = () => {
   return (
-    <div className="pointer-events-none  fixed inset-0 z-100 opacity-10 mix-blend-soft-light">
-      <svg className="h-full w-full">
+    <div className="pointer-events-none absolute inset-0 z-0 opacity-[1] mix-blend-overlay">
+      <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
         <filter id="noiseFilter">
           <feTurbulence
             type="fractalNoise"
-            baseFrequency="1.5"
+            baseFrequency="1"
             numOctaves="4"
             stitchTiles="stitch"
           />
@@ -16,4 +16,4 @@ const Grain = () => {
   );
 };
 
-export default Grain
+export default Grain;
