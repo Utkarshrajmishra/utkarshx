@@ -79,7 +79,7 @@ export default function MediumBlogs() {
 
 <>      <div className="grid gap-6 md:grid-cols-2 mt-8">
         {posts.slice(0, 4).map((post, index) => (
-        <BlogCard post={post} index={index} />
+        <BlogCard post={post} index={index} key={index}/>
         ))}
       </div>
       <div className="mt-8 flex justify-center">

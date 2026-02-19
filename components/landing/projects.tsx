@@ -14,7 +14,7 @@ export default function Projects() {
 
       <div className="grid gap-6 md:grid-cols-2 mt-8">
         {projects.slice(0, 4).map((project, index) => (
-          <ProjectCard project={project} index={index} />
+          <ProjectCard project={project} index={index} key={index}/>
         ))}
       </div>
 

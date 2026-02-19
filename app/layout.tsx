@@ -9,13 +9,10 @@ import { Quote } from '@/components/common/quotes';
 import Footer from '@/components/common/footer';
 import Grain from '@/components/landing/grain';
 
-
-
-
 const hankenGrotesk = Hanken_Grotesk({
-  variable: "--font-host-grotesk",
-  subsets: ["latin"]
-})
+  variable: '--font-host-grotesk',
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://utkarshx.vercel.app/'),
@@ -32,7 +29,7 @@ export const metadata: Metadata = {
         alt: 'Utkarsh Raj Mishra - Full Stack Web Developer',
       },
     ],
-  }
+  },
 };
 
 export default function RootLayout({
@@ -43,17 +40,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${hankenGrotesk.variable}  relative z-40 bg-neutral-950 text-white antialiased flex items-center flex-col`}
+        className={` ${hankenGrotesk.variable} px-20  relative z-0 bg-neutral-950 text-white antialiased flex items-center flex-col`}
       >
         <ViewTransitions>
           <ReactLenis root>
-            {/* <Grain/> */}
-            <div className='relative z-40 '>
-            <Header />
-            {children}
-            <OnekoCat />
-            <Quote />
-            <Footer />
+            <div className="fixed inset-0 bg-pattern z-0 pointer-events-none"></div>
+            <div className="relative border  border-neutral-900 z-0 w-full bg-neutral-950  flex flex-col items-center justify-center">
+            
+              <Header />
+              {children}
+              <OnekoCat />
+              <Quote />
+              <Footer />
             </div>
           </ReactLenis>
         </ViewTransitions>

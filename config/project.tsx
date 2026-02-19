@@ -128,6 +128,8 @@ export const projects: Project[] = [
       { name: 'Tailwind CSS', icon: <div className='size-7'> <TailwindCss key="tailwindcss" /> </div> },
       { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
       { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+      { name: 'Socket.io', icon: <div className='size-7'> <SocketIo key="socketio" /> </div> },
+
     ],
     github: 'https://github.com/Utkarshrajmishra/KeyboardWars',
     live: 'https://keyboardwars.vercel.app/',
@@ -177,6 +179,7 @@ export const projects: Project[] = [
       { name: 'Bun', icon: <div className='size-7'> <Bun key="bun" /> </div> },
       { name: 'Vercel', icon: <div className='size-7'> <Vercel key="vercel" /> </div> },
       { name: 'Appwrite', icon: <div className='size-7'> <Appwrite key="appwrite" /> </div> },
+   
     ],
     github: 'https://github.com/Utkarshrajmishra/algochunk',
     live: 'https://algochunk.vercel.app/',
@@ -231,6 +234,8 @@ export const projects: Project[] = [
       { name: 'Tailwind CSS', icon: <div className='size-7'> <TailwindCss key="tailwindcss" /> </div> },
       { name: 'shadcn/ui', icon: <div className='size-7'> <Shadcn key="shadcn" /> </div> },
       { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
+            { name: 'Socket.io', icon: <div className='size-7'> <SocketIo key="socketio" /> </div> },
+
     ],
     github: 'https://github.com/Utkarshrajmishra/collobrative-code-editor',
     live: 'https://collobrative-code-editor.vercel.app/code-editor/ae6c7f17-cc5e-4062-a7a3-15bc2193ca1e',
@@ -273,7 +278,6 @@ export const projects: Project[] = [
       { name: 'Prisma', icon: <div className='size-7'> <Prisma key="prisma" /> </div> },
       { name: 'PostgreSQL', icon: <div className='size-7'> <PostgreSQL key="postgresql" /> </div> },
       { name: 'Tailwind CSS', icon: <div className='size-7'> <TailwindCss key="tailwindcss" /> </div> },
-      { name: 'Socket.io', icon: <div className='size-7'> <SocketIo key="socketio" /> </div> },
     ],
     github:'https://github.com/Utkarshrajmishra/gitmap',
     live: 'https://gitmap-sd6y.vercel.app/',
