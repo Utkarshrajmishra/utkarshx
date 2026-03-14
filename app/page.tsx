@@ -26,7 +26,7 @@ export default function Home() {
       <CalComContextProvider>
         <CTA />
       </CalComContextProvider>
-      <PersonalLife />
+      {/* <PersonalLife /> */}
       </StatusContextProvider>
 
     </div>
