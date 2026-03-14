@@ -15,11 +15,11 @@ export default function ExperienceSection() {
           <ExperienceCard key={experience.company} experience={experience} />
         ))}
       </div>
-      <div className="mt-8 flex justify-center">
+      {/* <div className="mt-8 flex justify-center">
         <Button variant="outline">
           <Link href="/work-experience">Show all work experiences</Link>
         </Button>
-      </div>
+      </div> */}
     </Wrapper>
   );
 }
